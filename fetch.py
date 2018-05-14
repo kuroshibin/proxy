@@ -210,7 +210,7 @@ def main():
     sys.stdout.write("%s\n\n" % BANNER)
     parser = optparse.OptionParser(version=VERSION)
     parser.add_option("--anonymity", dest="anonymity", help="Regex for filtering anonymity (e.g. \"anonymous|elite\")")
-    parser.add_option("--country", dest="country", help="Regex for filtering country (e.g. \"china|brazil\")")
+    parser.add_option("--country", dest="country", help="Regex for filtering country (e.g. \"Thailand|Singapore\")")
     parser.add_option("--max-latency", dest="maxLatency", type=float, help="Maximum (tolerable) latency in seconds (default %d)" % TIMEOUT)
     parser.add_option("--no-https", dest="noHttps", action="store_true", help="Disable HTTPS checking (not recommended)")
     parser.add_option("--output", dest="outputFile", help="Store resulting proxies to output file")
